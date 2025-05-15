@@ -16,7 +16,7 @@ public class CapitalizadorPalavra implements ICapitalizador {
             return texto;
         }
 
-        StringTokenizer tokenizer = new StringTokenizer(texto, "\t\n\r\f", true);
+        StringTokenizer tokenizer = new StringTokenizer(texto, " \t\n\r\f", true);
         StringBuffer resultado = new StringBuffer();
 
         while (tokenizer.hasMoreTokens()) {
